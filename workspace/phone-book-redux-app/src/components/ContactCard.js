@@ -22,7 +22,7 @@ const ContactCard = ({ contact }) => {
           <i className='bi bi-pencil'></i>
         </button>
         <button
-          onClick={() => dispatch(deleteContact(contact.id))}
+          onClick={() => deleteContact(contact.id).then(dispatch)}
           className='app-btn btn btn-link'
         >
           <i className='bi bi-trash'></i>

@@ -3,6 +3,7 @@ import {
   ADD_CONTACT,
   CLEAR_SELECTION,
   DELETE_CONTACT,
+  FETCH_CONTACTS,
   SELECT_CONTACT,
   UPDATE_CONTACT,
 } from '../action-types/phonebook-types';
@@ -15,6 +16,10 @@ const initialState = {
 function phonebookReducer(state = initialState, action) {
   console.log('phonebookReducer', state, action);
   // based on the action type, we will return the modified version of state
+
+  if (action.type === FETCH_CONTACTS) {
+    return { ...state, contacts: action.payload };
+  }
 
   if (action.type === SELECT_CONTACT) {
     return { ...state, selectedContact: action.payload };
@@ -35,8 +40,8 @@ function phonebookReducer(state = initialState, action) {
 
   if (action.type === ADD_CONTACT) {
     const contact = action.payload;
-    contact.id = new Date().getTime();
-    return { ...state, contacts: [contact, ...state.contacts] };
+    // contact.id = new Date().getTime();
+    return { ...state, contacts: [...state.contacts, contact] };
   }
 
   if (action.type === UPDATE_CONTACT) {

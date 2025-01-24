@@ -1,44 +1,32 @@
 {
-    "contacts": [
-      {
-        "id": 1,
-        "firstname": "John",
-        "lastname": "Doe",
-        "email": "john.doe@example.com",
-        "phone": "123-456-7890",
-        "city": "New York"
-      },
-      {
-        "id": 2,
-        "firstname": "Jane",
-        "lastname": "Smith",
-        "email": "jane.smith@example.com",
-        "phone": "234-567-8901",
-        "city": "Los Angeles"
-      },
-      {
-        "id": 3,
-        "firstname": "Michael",
-        "lastname": "Johnson",
-        "email": "michael.johnson@example.com",
-        "phone": "345-678-9012",
-        "city": "Chicago"
-      },
-      {
-        "id": 4,
-        "firstname": "Emily",
-        "lastname": "Davis",
-        "email": "emily.davis@example.com",
-        "phone": "456-789-0123",
-        "city": "Houston"
-      },
-      {
-        "id": 5,
-        "firstname": "David",
-        "lastname": "Wilson",
-        "email": "david.wilson@example.com",
-        "phone": "567-890-1234",
-        "city": "Phoenix"
-      }
-    ]
+  "contacts": [
+    {
+      "id": "d0de",
+      "firstname": "Vinod",
+      "lastname": "Kumar",
+      "phone": "973-142-4784",
+      "email": "vinod@vinod.co"
+    },
+    {
+      "id": "3d8d",
+      "firstname": "RAVI",
+      "lastname": "KIRAN",
+      "email": "RAVIKIRAN@XMPL.COM",
+      "phone": "567-098-5678"
+    },
+    {
+      "id": "0769",
+      "firstname": "SURAJ",
+      "lastname": "SINGH",
+      "email": "SURAJ.SINGH@XMPL.COM",
+      "phone": "678-543-7654"
+    },
+    {
+      "id": "d33c",
+      "firstname": "JOHN",
+      "lastname": "DOE",
+      "email": "JOHN.DOE@XMPL.COM",
+      "phone": "678-727-8181"
+    }
+  ]
 }

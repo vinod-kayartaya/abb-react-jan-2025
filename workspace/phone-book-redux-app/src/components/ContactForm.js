@@ -40,9 +40,11 @@ const ContactForm = () => {
     evt.preventDefault();
 
     if (contact.id === undefined) {
-      dispatch(addContact(contact));
+      // dispatch(addContact(contact));
+      addContact(contact).then(dispatch);
     } else {
-      dispatch(updateContact(contact));
+      // dispatch(updateContact(contact));
+      updateContact(contact).then(dispatch);
     }
     // dispatch({ type: 'ADD_CONTACT', payload: contact });
 

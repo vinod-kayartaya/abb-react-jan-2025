@@ -1,0 +1,21 @@
+http://localhost:8080/contacts
+
+###
+
+GET /contacts
+Host: localhost:8080
+Accept: application/json
+
+###
+
+POST /contacts
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "Vinod",
+    "lastname": "Kumar",
+    "phone": "973-142-4784",
+    "email": "vinod@vinod.co"
+}
