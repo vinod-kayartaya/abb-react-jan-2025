@@ -1,0 +1,14 @@
+.app-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.app-box .app-trash-btn {
+    visibility: hidden;
+}
+
+.app-box:hover .app-trash-btn {
+    visibility: visible;
+}
