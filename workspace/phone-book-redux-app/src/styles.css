@@ -1,6 +1,6 @@
-.app-contact-card .app-trash-btn {
+.app-contact-card .app-btn {
     visibility: hidden;
 }
-.app-contact-card:hover .app-trash-btn {
+.app-contact-card:hover .app-btn {
     visibility: visible;
 }

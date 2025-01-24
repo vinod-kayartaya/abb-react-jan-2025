@@ -3,6 +3,7 @@ import store from './redux/store';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactList from './components/ContactList';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <div className='row'>
           <div className='col-6'>
             <ContactList />
+          </div>
+          <div className='col-6'>
+            <ContactForm />
           </div>
         </div>
       </div>

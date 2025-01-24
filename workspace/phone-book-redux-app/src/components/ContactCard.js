@@ -1,6 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../redux/action-creators/phonebook-action-creators';
+import {
+  deleteContact,
+  selectContact,
+} from '../redux/action-creators/phonebook-action-creators';
 
 import '../styles.css';
 
@@ -13,8 +16,14 @@ const ContactCard = ({ contact }) => {
       <h3>
         {contact.firstname} {contact.lastname}
         <button
+          onClick={() => dispatch(selectContact(contact))}
+          className='app-btn btn btn-link'
+        >
+          <i className='bi bi-pencil'></i>
+        </button>
+        <button
           onClick={() => dispatch(deleteContact(contact.id))}
-          className='app-trash-btn btn btn-link'
+          className='app-btn btn btn-link'
         >
           <i className='bi bi-trash'></i>
         </button>
